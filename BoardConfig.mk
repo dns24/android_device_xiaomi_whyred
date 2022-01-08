@@ -39,5 +39,8 @@ VENDOR_SECURITY_PATCH := 2018-11-01
 TARGET_INIT_VENDOR_LIB := //$(DEVICE_PATH):libinit_whyred
 TARGET_RECOVERY_DEVICE_MODULES := libinit_whyred
 
+# WLAN
+BOARD_USES_AOSP_WLAN_HAL := true
+
 # Inherit the proprietary files
 include vendor/xiaomi/whyred/BoardConfigVendor.mk
